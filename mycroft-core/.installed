@@ -1,0 +1,6 @@
+2f52376295b372e827f262f772521f04  requirements/requirements.txt
+36c66f90a801556a48eeb6f64cf3bfae  requirements/extra-audiobackend.txt
+46715a783405dabebd259254b0fe8de5  requirements/extra-stt.txt
+bb7e422a1634f28a0625b59c5a1dfb3f  requirements/extra-mark1.txt
+006bb57524e8c395349a8dad09996f2a  requirements/tests.txt
+a1274696ff07000357c5b847731e1b11  dev_setup.sh
