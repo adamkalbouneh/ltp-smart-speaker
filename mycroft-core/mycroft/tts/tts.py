@@ -660,7 +660,7 @@ def load_tts_plugin(module_name):
     return load_plugin('mycroft.plugin.tts', module_name)
 
 
-class TTSFactory:
+class TTSFactory(metaclass=ABCMeta):
     """Factory class instantiating the configured TTS engine.
 
     The factory can select between a range of built-in TTS engines and also
