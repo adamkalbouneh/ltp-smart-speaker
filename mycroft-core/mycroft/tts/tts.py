@@ -16,6 +16,7 @@ from copy import deepcopy
 import os
 import random
 import re
+import serial
 from abc import ABCMeta, abstractmethod
 from pathlib import Path
 from threading import Thread
@@ -50,6 +51,18 @@ SENTENCE_DELIMITERS = re.compile(
     r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\;|\?)\s'
 )
 
+
+arduino_port = 'COM3'  # Adjust this to your Arduino's serial port
+baud_rate = 9600
+
+# Initialize the serial connection
+arduino_serial = serial.Serial(arduino_port, baud_rate)
+time.sleep(2)  # Allow the Arduino to initialize
+
+# Function to send commands to the Arduino
+def send_command(command):
+    arduino_serial.write(command.encode())
+    time.sleep(0.1)
 
 def default_preprocess_utterance(utterance):
     """Default method for preprocessing Mycroft utterances for TTS.
@@ -446,6 +459,7 @@ class TTS(metaclass=ABCMeta):
         self._execute(sentence, ident, listen)
 
     def _execute(self, sentence, ident, listen):
+        send_command('START')
         if self.phonetic_spelling:
             for word in re.findall(r"[\w']+", sentence):
                 if word.lower() in self.spellings:
@@ -504,6 +518,8 @@ class TTS(metaclass=ABCMeta):
             TTS.queue.put(
                 (self.audio_ext, str(audio_file.path), viseme, ident, l)
             )
+
+            send_command('STOP')
 
     def _get_sentence_from_cache(self, sentence_hash):
         cached_sentence = self.cache.cached_sentences[sentence_hash]
