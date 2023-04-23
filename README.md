@@ -183,6 +183,11 @@ Then, open the cloned repository in Geany
  
 
 ### Installing mycroft-spotify skill
+Warning spotify has multiple issues:
+- Spotify skill requires a premium account
+- Spotify skill requires a second audio device connected by audio jack
+- Spotify skill overwrites radio skill
+
 
 Firstly we must install the Mycroft spotify skill. When we are in the Mycroft interface we ask Mycroft to 
 `install beta spotify`
@@ -247,7 +252,7 @@ And save the file before exiting the nano text editor.
 Next we need to edit the librespot config.
 `sudo nano /etc/raspotify/conf`
 
-And add your premium spotify accounts credentials to replace the `Spotify Username` and `Spotify Password`.
+And add your premium spotify accounts credentials to replace the `{Spotify Username}` and `{Spotify Password}`.
 `LIBRESPOT_USERNAME="{Spotify Username}"`
 `LIBRESPOT_PASSWORD="{Spotify Password}"`
 
