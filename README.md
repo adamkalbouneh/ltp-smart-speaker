@@ -29,6 +29,9 @@ Mouse
 Keyboard
 
 
+### Printing the 3D case
+Forward the Rasp_Pi_Case.stl file to 3D technician for printing https://drive.google.com/file/d/1Woy9y_80DmZeytRBNK62dr2omwc7E8f3/view?usp=sharing
+
 ### Setting up the arduino
 Connect the arduino to the 8 x 8 LED display using 5 male to female wires as displayed in the diagram below
 
