@@ -167,14 +167,14 @@ How to get started with the ChatGPT skill.
 
 Open the terminal and write the following command: 
 
- cd mycroft-core 
+ `cd mycroft-core `
 
-Then to install openai by writing pip install openai   
+Then to install openai by writing `pip install openai`   
 
- Once complete, enter the skills directory with the following command cd skills 
+ Once complete, enter the skills directory with the following command `cd skills` 
 
  Clone the repository by writing  
-git clone https://github.com/marwiieee/mycroft-chatgpt-fallback.git 
+`git clone https://github.com/marwiieee/mycroft-chatgpt-fallback.git `
 
 Then, open the cloned repository in Geany 
 (which can be found by clicking the raspberry pi icon → programming → Geany) and open the settings.json file   
