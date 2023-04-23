@@ -1,0 +1,15 @@
+
+[Unit]
+Description=LTP Smart Speaker.
+
+[Service]
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/pi/.Xauthority
+ExecStart=/usr/bin/xterm -hold -e /usr/local/bin/mycroft-core/startup-ltp.sh
+Restart=always
+RestartSec=10s
+KillMode=process
+TimeoutSec=infinity
+
+[Install]
+WantedBy=graphical.target
