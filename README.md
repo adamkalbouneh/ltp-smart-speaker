@@ -39,6 +39,13 @@ Connect the arduino to the 8 x 8 LED display using 5 male to female wires as dis
 
 Place 8 x 8 LED display into the 3D printed case
 
+Connect the arduino board to laptop using the arduino USB charing cable.
+Open the talk.ino file in the Arduino desk app.
+
+![image-9.png](./image-9.png)
+
+First press the tick icon in the top left to verify the file. When verification is finished then press the right arrow icon to upload the animation.
+
  
 ### Getting the raspberry pi imager on the SD card 
 Software needed: 
