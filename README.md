@@ -161,7 +161,7 @@ To install skills use the following commands in the Mycroft command prompt:
 ‘install https://github.com/ethanallenharris/routine-new-skill’
 
 
-###Installing ChatGPT skill 
+### Installing ChatGPT skill 
 
 How to get started with the ChatGPT skill. 
 
