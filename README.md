@@ -1,56 +1,3 @@
-# mycroft-blank
-
-
-
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://git.cardiff.ac.uk/c2050237/mycroft-blank.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://git.cardiff.ac.uk/c2050237/mycroft-blank/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
 ## Name
 LTP Smart Speaker
 
@@ -66,12 +13,19 @@ Disclaimer: these instructions are for windows
 
 ### Equipment links
 micro SD https://www.amazon.co.uk/Kingston-microSDHC-SDC4-8GB-Adapter-black/dp/B001CQT0X4/ref=asc_df_B001CQT0X4/?tag=googshopuk-21&linkCode=df0&hvadid=309924738384&hvpos=&hvnetw=g&hvrand=2099474083048761382&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9045370&hvtargid=pla-381844061666&psc=1
+
 Raspberry Pi 4 https://thepihut.com/products/raspberry-pi-4-model-b?variant=20064052740158&src=raspberrypi
+
 USB microphone https://www.amazon.co.uk/Recording-Microphone-Omnidirectional-Portable-Conferencing-BLACK/dp/B088D6SJBQ/ref=sr_1_9?crid=GQHIZTYCCSO&keywords=raspberry+pi+microphone&qid=1682044087&sprefix=raspberry+pi+microphone%2Caps%2C85&sr=8-9
+
 USB Speaker https://www.amazon.co.uk/Speaker-Portable-Loudspeaker-Multimedia-Notebook/dp/B006RBSHAQ/ref=sr_1_20?crid=1ZSMF3JOD61X0&keywords=usb+speaker&qid=1682044405&sprefix=usb+speaker%2Caps%2C87&sr=8-20
+
 Arduino Uno kit https://www.amazon.co.uk/Project-Starter-Tutorial-Prototype-Expansion/dp/B01D8KOZF4/ref=sr_1_2_sspa?keywords=arduino+uno+kit&qid=1682043917&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1
+
 Micro HDMI https://www.amazon.co.uk/Twozoh-High-Speed-Braided-support-Raspberry/dp/B08RB1HKKB/ref=sr_1_1_sspa?crid=3VB2K7MX4Y9AF&keywords=micro+hdmi+cable&qid=1682044139&sprefix=micro+hdmi+cable%2Caps%2C72&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1
+
 Mouse
+
 Keyboard
 
 
@@ -141,7 +95,9 @@ Type in commands:
 `cd mycroft-core`
 
 (For the first time only) `./dev_setup.sh`
+
 You will be prompted with yes or no questions answer as follows:
+
 `N`
 `N`
 `N`
@@ -151,29 +107,47 @@ You will be prompted with yes or no questions answer as follows:
 ./dev_setup.sh takes a long time to run so feel free to grab some coffee
 
 Type in command:
+
 `./start-mycroft.sh cli` (disclaimer: if this command does not work, run `./dev_setup.sh` again)
 
-(If any other problems arise run this command: `./start-mycroft.sh all restart`, then: `./start-mycroft.sh cli`)
+(If any other problems arise run this command:`./start-mycroft.sh all restart`, then: `./start-mycroft.sh cli`)
 
  
 ### Installing skills
 To install skills use the following commands in the Mycroft command prompt:
+
 ‘install https://github.com/adamkalbouneh/compliment-me-skill’
+
 ‘install https://github.com/adamkalbouneh/joke-skill’
+
 ‘install https://github.com/adamkalbouneh/happy-skill’
+
 ‘install https://github.com/adamkalbouneh/bored-skill’
+
 ‘install https://github.com/adamkalbouneh/i-love-you-skill’
+
 ‘install https://github.com/adamkalbouneh/sad-skill’
+
 ‘install https://github.com/adamkalbouneh/myname-skill’
+
 ‘install https://github.com/adamkalbouneh/breathing-exercise-skill’
+
 ‘install https://github.com/adamkalbouneh/affirmations-skill’
+
 ‘install https://github.com/adamkalbouneh/good-morning-skill’
+
 ‘install https://github.com/adamkalbouneh/sad-skill’
+
 ‘install https://github.com/adamkalbouneh/happy-skill’
+
 ‘install https://github.com/adamkalbouneh/good-night-skill’
+
 ‘install https://github.com/johnbartkiw/mycroft-skill-tunein’
+
 ‘install https://github.com/adamkalbouneh/lonely-skill-skill’
+
 ‘install https://github.com/ethanallenharris/unprompted-dialog-skill.git’
+
 ‘install https://github.com/ethanallenharris/routine-new-skill’
 
 
@@ -192,7 +166,9 @@ Before being able to use this newly installed skill, we need to provide the cred
 After creating a spotify “Application” the user should be provided a “Client ID” and “Service ID”
 
 Then run the commands:
+
 `source venv-activate.sh`
+
 `python skills/mycroft-spotify.forslund/auth.py`
 
 After we have started the API authentication python program, it will ask the user to enter their spotify “Application” “client ID” and “secret ID” provided earlier.
@@ -200,22 +176,28 @@ After we have started the API authentication python program, it will ask the use
 After completing the authorisation process spotify will now be utilisable by the Mycroft program and the user can now request spotify music to be played on a “listening device”. Unfortunately due to spotify no longer supporting the Mycroft spotify API (add reference) the Mycroft AI is no longer registered as a listening device/interface, thus not being able to play music. 
 
 This means we will need to give the Raspberry Pi the ability to register as a spotify listening device. For this we are going to utilise the “raspotify” repository to connect to spotify services and register the Raspberry Pi as a listening device.
+
 https://github.com/dtcooper/raspotify
 
 ### Installing and setting up raspotify
 Disclaimer: editing files with the nano text editor might require changing the terminals directory to “/etc/”
 
 Install the raspotify repository via the command:
+
 `sudo apt-get -y install curl && curl -sL https://dtcooper.github.io/raspotify/install.sh | sh`
 
 After installing the raspotify repo we need to configure the audio output. Run the command: 
+
 `sudo apt update && sudo apt install -y asound-conf-wizard`
 
 List audio cards
+
 `aplay -l`
 
 Run the command below and replace “{card number}” with the desired audio card.
+
 `aplay -Dhw:{card number} --dump-hw-params /usr/share/sounds/alsa/Front_Right.wav`
+
 (audio card selected should be headphone or audio jack)
 
 Afterwards, we need to edit the “/etc/asound.conf” configuration file which may or may not already exist.
@@ -224,6 +206,7 @@ To do this we need to run the command:
 `sudo nano /etc/asound.conf`
 
 Insert the text below and replace the {card number} with the previously entered card slot
+
 `defaults.ctl.card {card number}`
 `defaults.pcm.card {card number}`
 `defaults.pcm.dmix.rate 44100`
@@ -236,6 +219,7 @@ Next we need to edit the librespot config.
 And add your premium spotify accounts credentials to replace the `Spotify Username` and `Spotify Password`.
 `LIBRESPOT_USERNAME="{Spotify Username}"`
 `LIBRESPOT_PASSWORD="{Spotify Password}"`
+
 However if you have disabled discovery for whatever reason and you provided your credentials you will also want to enable credential caching so that librespot will cache the auth token and not have to login every time you connect.
 
 To do this change:
@@ -253,31 +237,43 @@ to
 `#LIBRESPOT_DISABLE_CREDENTIAL_CACHE=`
 
 To make sure all changes take effect you must restart the Raspotify service:
+
 `sudo systemctl restart raspotify`
 
 To check raspotify has been configured correctly we can run the command:
+
 `sudo systemctl status raspotify`
 
 Afterwards you might need to reset mycoft-core to apply the changes:
+
 `bash start-mycroft.sh restart all`
 
 And start mycroft again:
+
 `bash start-mycroft.sh debug`
 
 
 
 ## Support
 vujovicm@cardiff.ac.uk
+
 shahina@cardiff.ac.uk
+
 omarfm@cardiff.ac.uk
+
 kalbouneha@cardiff.ac.uk
+
 allen-harrise@cardiff.ac.uk
 
 ## Authors and acknowledgment
 Milos Vujovic vujovicm@cardiff.ac.uk
+
 Ahmad Shahin shahina@cardiff.ac.uk
+
 Fatima Marwa Omar omarfm@cardiff.ac.uk
+
 Adam Kalbouneh kalbouneha@cardiff.ac.uk
+
 Ethan Allen-Harris allen-harrise@cardiff.ac.uk
 
 ## Project status
