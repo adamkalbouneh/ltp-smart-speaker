@@ -266,15 +266,15 @@ kalbouneha@cardiff.ac.uk
 allen-harrise@cardiff.ac.uk
 
 ## Authors and acknowledgment
-Milos Vujovic vujovicm@cardiff.ac.uk
+Milos Vujovic
 
-Ahmad Shahin shahina@cardiff.ac.uk
+Ahmad Shahin
 
-Fatima Marwa Omar omarfm@cardiff.ac.uk
+Fatima Marwa Omar
 
-Adam Kalbouneh kalbouneha@cardiff.ac.uk
+Adam Kalbouneh
 
-Ethan Allen-Harris allen-harrise@cardiff.ac.uk
+Ethan Allen-Harris
 
 ## Project status
 Completed on the 21/04/2023
