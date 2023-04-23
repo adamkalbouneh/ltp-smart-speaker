@@ -161,6 +161,27 @@ To install skills use the following commands in the Mycroft command prompt:
 ‘install https://github.com/ethanallenharris/routine-new-skill’
 
 
+###Installing ChatGPT skill 
+
+How to get started with the ChatGPT skill. 
+
+Open the terminal and write the following command: 
+
+ cd mycroft-core 
+
+Then to install openai by writing pip install openai   
+
+ Once complete, enter the skills directory with the following command cd skills 
+
+ Clone the repository by writing  
+git clone https://github.com/marwiieee/mycroft-chatgpt-fallback.git 
+
+Then, open the cloned repository in Geany 
+(which can be found by clicking the raspberry pi icon → programming → Geany) and open the settings.json file   
+
+ Where it says “key: “ input your chatgpt api key after the semi colon but within the quotations. 
+ 
+
 ### Installing mycroft-spotify skill
 
 Firstly we must install the Mycroft spotify skill. When we are in the Mycroft interface we ask Mycroft to 
